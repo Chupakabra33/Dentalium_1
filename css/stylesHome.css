@@ -1,0 +1,446 @@
+/*Header*/
+.navbar-brand {
+	width: 60px;
+	vertical-align: middle;
+}
+.navbar-brand span {
+	margin-left: 1em;
+}
+#logoText {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-nav {
+	position: absolute;
+	right: 16px;
+}
+.dropdown-menu {
+	position: absolute;
+	left: -80px;
+	border: 1px solid #ffffff;
+	background: #1484e6 url("images/ui-bg_white-lines_22_1484e6_40x100.png") 50% 50% repeat;
+}
+.dropdown-item {
+	font-weight: bold;
+	color: #ffffff !important;
+}
+.dropdown-item:hover {
+	border: 1px solid #2293f7;
+	font-weight: bold;
+	color: #ffffff !important;
+	background: #e69700 url("images/ui-bg_white-lines_20_e69700_40x100.png") 50% 50% repeat;
+}
+.my-button:hover {
+	border: 1px solid #2293f7;
+	background: #2293f7 url("images/ui-bg_white-lines_30_2293f7_40x100.png") 50% 50% repeat;
+	font-weight: bold;
+	color: #ffffff;
+}
+.navbar {
+	z-index: 3;
+}
+
+/* Main content starts here*/
+#mainContent {
+	margin: 0;
+	padding: 0;
+	background-image: url("../project-images/background_2.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#carouselExampleIndicators {
+	z-index: 1;
+}
+#menu {
+	border: 1px solid #ffffff;
+	background: #c5ddfc url("images/ui-bg_white-lines_25_c5ddfc_40x100.png") 50% 50% repeat;
+	color: #333333;
+	font-size: 1.1rem;
+	z-index: 3;
+}
+#menu li ul {
+	width: 13rem;
+}
+#menu a, .card a {
+	text-decoration: none;
+}
+.card a:hover .card-body {
+	background-color: #c5ddfc;
+}
+.card a:hover .blurred {
+	background-color: #c5ddfc;
+}
+.sticky {
+	position: fixed;
+	width: 14rem;
+	left: 15px;
+	top: 0;
+	z-index: 3;
+	border-top: 0;
+}
+.sticky-menu {
+	position: -webkit-sticky;
+}
+.carousel-inner {
+	max-width: 100%;
+}
+.doc-name, .doc-description {
+	text-align: center;
+}
+#newsText {
+	padding: 15px 15px 5px 20px;
+	font-size: 1.7rem;
+}
+.card a {
+	position: relative;
+	width: 100%;
+	height: 28rem;
+	white-space: normal; 
+	overflow: hidden;
+	text-align: justify;
+	margin-bottom: 15px;
+}
+.card-img-top {
+	width: 100%;
+}
+.card-main-text {
+	z-index: 0;
+}
+.blurred {
+	position: absolute;
+	background: #ffffff;
+	z-index: 1;
+	margin: 0;
+	padding: 30px 0;
+	left: -10px;
+	bottom: -20px;
+	width: 110%;
+	height: 30px;
+	filter: blur(18px);
+	-webkit-filter: blur(18px);
+}
+.card-footer{
+	text-align: center;
+	padding: 10px 5px;
+}
+#subscribtionList {
+	display: none;
+	list-style: none;
+	color: #2c63aa;
+	margin-left: 20px; 
+	padding: 15px;
+	border: 1.5px solid #2c63aa;
+	border-radius: 6px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.emial-list-caption {
+	font-weight: bold;
+}
+#loadedEmails {
+	font-style: italic;	
+	word-wrap: break-word;
+}
+
+/*Footer starts here*/
+footer div.row {
+	margin: 0;
+}
+#inputSubscribe {
+	text-transform: lowercase;
+}
+#inputSubscribe div {
+	text-align: left !important;
+}
+#inputSubscribe::placeholder {
+	font-style: italic;
+}
+.error-style {
+	border: 2px solid #b70000;
+	-webkit-box-shadow: 0px 0px 10px 3px rgba(183,0,0,0.7);
+	-moz-box-shadow: 0px 0px 10px 3px rgba(183,0,0,0.7);
+	box-shadow: 0px 0px 10px 3px rgba(183,0,0,0.7);
+}
+.error-message {
+	display: none;
+	font-size: 1rem;
+	font-style: italic;
+	color: #a00000;
+	margin-bottom: 10px !important;
+}
+#formSubscribe {
+	margin-top: 10px;
+}
+#formSubscribe div {
+	margin: 0;
+}
+#formSubscribe div div {
+	margin: 0;
+	width: 100%;
+}
+#formSubscribe div input {
+	margin-bottom: 10px;
+}
+#btnSubscribe {
+	margin: 0;
+}
+#footerMenu {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#footerMenu div {
+	margin: 15px 0 0 0;
+}
+#footerMenu div a {
+	text-decoration: none;
+	padding: 0 7px;
+	margin: 5px 20px;
+}
+#adminMenu {
+	float: left;
+	width: 150px;
+	text-align: center;
+	border: 1px solid #2c63aa;
+	color: #2c63aa;
+	padding: 5px 15px;
+	margin-left: 15px;
+	font-size: 1.1rem;
+	z-index: 2;
+	list-style: none;
+}
+#adminMenu:hover {
+	background: #e69700;
+	border-color: #e69700;
+	text-decoration: none;
+	color: #ffffff;
+}
+footer > div:last-child {
+	list-style: none;
+	margin: 15px 10px 10px;
+	font-size: 0.9rem;
+	text-align: right;
+}
+#footerMenu a:hover {
+	background: rgba(255, 255, 255, 0.7);
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 8px 10px rgba(255,255,255,0.7);
+	-moz-box-shadow: 0px 0px 8px 10px rgba(255,255,255,0.7);
+	box-shadow: 0px 0px 8px 10px rgba(255,255,255,0.7);
+}
+
+/*Responsive*/
+@media (max-width: 360px) {
+	#formSubscribe div > div {
+		justify-content: center;
+	}
+	#footerMenu div {
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+	}
+	footer > div:last-child {
+		text-align: center;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.full-width {
+		padding: 0;
+	}
+	#logoText {
+		font-size: 1.2em;
+	}
+	.carousel-inner {
+		height: 200px;
+	}
+	.personnel {
+		width: 130px;
+	}
+	.doc-name {
+		font-size: 0.7em;
+		margin: 5px 0 0 0;
+	}
+	.doc-description {
+		font-size: 0.6em;
+		margin-bottom: 25px;
+	}
+	#menu {
+		width: 100%;
+		border-radius: 0;
+		z-index: 3;
+	}
+	#menu li ul {
+		position: absolute !important;
+		left: 0 !important;
+		top: 4.5rem !important;
+		width: 100% !important;
+		border-radius: 0 0 6px 6px;
+		z-index: 3;
+	}
+	.sticky {
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: 3;
+		border-top: 0;
+	}
+	#newsText {
+		font-size: 1.2rem;
+	}
+	.card-title {
+		font-size: 1.1rem;
+	}
+	.card-text {
+		font-size: 0.9rem;
+	}
+	#doctors {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	#ourTeamBackground {
+		width: 100%;
+		height: 2.7rem;
+		background-color: #ffffff;
+		opacity: 0.4;
+		filter: blur(3px);
+		z-index: 0;
+		display: inline-block;
+	}
+	#ourTeam {
+		width: 100%;
+		text-align: center;
+		margin-bottom: -1rem;
+		font-size: 1.2rem;
+		z-index: 1;
+		display: inline-block;
+		transform: translate(0, -120%);
+	}
+	.personnel {
+		margin: 0.3rem;
+	}
+	.card-footer{
+		font-size: 0.9rem;
+	}
+	.error-message {
+		font-size: 0.8rem;
+	}
+	#footerMenu a {
+		font-size: 0.9rem;
+	}
+	footer div:last-child {
+		font-size: 0.7rem;
+	}
+	#subscribtionList {
+		font-size: 0.8rem;
+		max-width: 100%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 899.98px) {
+	.card {
+		flex: 40% !important;
+		margin-bottom: 15px !important;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px){
+	.carousel-inner {
+		height: 400px;
+	}
+	#ourTeamBackground {
+		width: 100%;
+		height: 3.2rem;
+		background-color: #ffffff;
+		opacity: 0.4;
+		filter: blur(3px);
+		z-index: 0;
+		display: inline-block;
+		transform: translate(0, 30%);
+	}
+	#ourTeam {
+		width: 100%;
+		text-align: center;
+		margin-bottom: -1rem;
+		font-size: 1.2rem;
+		z-index: 1;
+		display: inline-block;
+		transform: translate(0, -100%);
+	}
+	.personnel {
+		width: 100%;
+	}
+	.doc-name {
+		font-size: 0.8em;
+		margin: 5px 0 0 0;
+	}
+	.doc-description {
+		font-size: 0.7em;
+		margin-bottom: 25px;
+	}
+	.card-title {
+		font-size: 1.1rem;
+	}
+	.card-text {
+		font-size: 0.9rem;
+	}
+	.card-footer{
+		font-size: 1rem;
+	}
+	#formSubscribe div label {
+		font-size: 0.9rem;
+		margin-bottom: 3px;
+	}
+}
+@media (min-width: 1061.98px) {
+		#footerMenu div a {
+		margin-top: 10px;
+	}
+}
+@media (min-width: 1200px) {
+	.carousel-inner {
+		height: 630px;
+	}
+	#ourTeamBackground {
+		width: 100%;
+		height: 3.5rem;
+		background-color: #ffffff;
+		opacity: 0.4;
+		filter: blur(3px);
+		z-index: 0;
+		display: inline-block;
+		transform: translate(0, 30%);
+	}
+	#ourTeam {
+		width: 100%;
+		text-align: center;
+		margin-bottom: -1rem;
+		font-size: 1.7rem;
+		z-index: 1;
+		display: inline-block;
+		transform: translate(0, -100%);
+	}
+	.personnel {
+		width: 100%;
+	}
+	.doc-name {
+		font-size: 0.9em;
+		margin: 5px 0 0 0;
+	}
+	.doc-description {
+		font-size: 0.8em;
+		margin-bottom: 25px;
+	}
+	#formSubscribe div label {
+		font-size: 0.9rem;
+		margin-bottom: 3px;
+	}
+}
+

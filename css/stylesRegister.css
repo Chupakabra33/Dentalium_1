@@ -1,0 +1,231 @@
+/*Header*/
+.navbar-brand {
+	width: 60px;
+	vertical-align: middle;
+}
+.navbar-brand span {
+	margin-left: 1em;
+}
+#logoText {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-nav {
+	position: absolute;
+	right: 16px;
+}
+.dropdown-menu {
+	position: absolute;
+	left: -80px;
+	border: 1px solid #ffffff;
+	background: #1484e6 url("../css/images/ui-bg_white-lines_22_1484e6_40x100.png") 50% 50% repeat;
+}
+.dropdown-item {
+	font-weight: bold;
+	color: #ffffff !important;
+}
+.dropdown-item:hover {
+	border: 1px solid #2293f7;
+	font-weight: bold;
+	color: #ffffff !important;
+	background: #e69700 url("../css/images/ui-bg_white-lines_20_e69700_40x100.png") 50% 50% repeat;
+}
+.my-button:hover {
+	border: 1px solid #2293f7;
+	background: #2293f7 url("../css/images/ui-bg_white-lines_30_2293f7_40x100.png") 50% 50% repeat;
+	font-weight: bold;
+	color: #ffffff;
+}
+.navbar {
+	z-index: 3;
+}
+#theWholePage {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left:0;
+	right:0;
+	background-image: url("../project-images/background_2.jpg");
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 660px;
+	z-index: 0;
+}
+
+/* Main content starts here*/
+#mainContent {
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+}
+#form {
+	margin: 30px 0 0 0;
+	width: 300px;
+	z-index: 1;
+}
+.form-group {
+	margin: auto;
+	text-align: center;
+}
+
+#form p {
+	font-style: italic;
+	font-size: 0.9rem;
+	margin: 20px 0 5px 0;
+}
+input.form-control {
+	margin-bottom: 40px;
+}
+.form-control::placeholder {
+	font-style: italic;
+}
+#form div:last-child{
+	text-align: center;
+}
+#form div p {
+	margin: 0 0 9px 0;
+}
+label.error {
+	color: #b70000;
+	font-style: italic;
+	font-size: 1rem;
+	margin-bottom: 15px;
+}
+input.error {
+	color: #b70000;
+	border: 2px solid #b70000;
+	margin-bottom: 0;
+	-webkit-box-shadow: 0px 0px 10px 3px rgba(183,0,0,0.7);
+	-moz-box-shadow: 0px 0px 10px 3px rgba(183,0,0,0.7);
+	box-shadow: 0px 0px 10px 3px rgba(183,0,0,0.7)
+}
+#formBackground {
+	position: absolute;
+	left: 50%
+	top: 50px;
+	padding: 0;
+	background-color: rgba(255, 255, 255, 0.5);
+	display: inline-block;
+	height: 34rem;
+	z-index: -1;
+}
+h2 {
+	display: none;
+	position: absolute;
+	border: 1px solid #2c63aa;
+	border-radius: 12px;
+	padding: 30px;
+	margin: 11% auto;
+	color: #2c63aa;
+	background-color: rgba(255, 255, 255, 0.5);
+	width: 350px;
+	font-size: 2rem;
+	text-align: center;
+	z-index: 1;
+}
+
+/*Footer starts here*/
+footer {
+	position: absolute;
+	width: 100%;
+	margin: -1px;
+	bottom: 0;
+	z-index: 1;
+}
+#footerMenu {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+	margin: 0;
+	padding: 0;
+}
+#footerMenu a {
+	text-decoration: none;
+	padding: 0 7px;
+	margin: 5px 20px;
+}
+footer div:last-child {
+	margin: 15px 10px 10px;
+	font-size: 0.9rem;
+	text-align: right;
+	font-style: italic;
+}
+#footerMenu a:hover {
+	background: rgba(255, 255, 255, 0.7);
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 8px 10px rgba(255,255,255,0.7);
+	-moz-box-shadow: 0px 0px 8px 10px rgba(255,255,255,0.7);
+	box-shadow: 0px 0px 8px 10px rgba(255,255,255,0.7);
+}
+
+/*Responsive*/
+@media (max-width: 340px) {
+	#theWholePage {
+		min-height: 730px;
+	}
+	#form {
+		width: 100% !important;
+		padding: 0 5px;
+	}
+	label.error {
+		font-size: 0.9rem;
+		margin-bottom: 8px;
+	}
+	input.form-control {
+		margin-bottom: 32px;
+	}
+	input.error {
+		margin-bottom: 0;
+	}
+	#footerMenu {
+		flex-direction: column;
+		align-items: center;
+	}
+	footer div:last-child {
+		text-align: center;
+	}
+}
+
+@media (max-width: 576px) {
+	#form {
+		margin: 15px auto 0 auto;
+		width: 300px;
+		z-index: 1;
+	}
+	#form div p {
+		font-size: 0.8rem;
+	}
+	#formBackground {
+		height: 34rem;
+	}
+	input.form-control {
+		height: 1.75rem;
+	}
+	h2 {
+		font-size: 1.5rem;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 767.98px) {
+	#logoText {
+		font-size: 1.2em;
+	}
+	#footerMenu a {
+		font-size: 0.9rem;
+	}
+	footer div:last-child {
+		font-size: 0.7rem;
+	}
+}
+
+@media only screen and (orientation: landscape) {
+	#theWholePage {
+		min-height: 730px;
+	}
+}
