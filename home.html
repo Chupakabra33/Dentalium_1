@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0, minimum-scale=0.86">
+	<title>Dentalium - project</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="./css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="./css/jquery-ui.theme.css">
+	<link rel="stylesheet" type="text/css" href="./css/stylesHome.css">
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous">
+	</script>
+	<script
+		src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+		integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+		crossorigin="anonymous">
+	</script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous">
+	</script>
+</head>
+
+<body>
+
+<div id="theWholePage" class="ui-widget ui-widget-content">
+	
+	<!-- Header -->
+	<nav class="ui-widget-header navbar navbar-expand-lg navbar-light bg-light">
+		<img class="navbar-brand" src="./project-images/tooth-brand.jpg" class="d-inline-block" alt="logo"><h1 id="logoText">Dentalium</h1>
+		<button class="ui-button navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="my-button ui-state-active nav-item nav-link active ui-corner-all" href="./home.html">Home<span class="sr-only">(current)</span></a>
+				<a class="my-button ui-state-default nav-item nav-link ui-corner-all" href="./register.html">Register</a>
+				<a class="my-button ui-state-default nav-item nav-link ui-corner-all" href="./search.html">Search</a>
+				<div class="nav-item dropdown">
+					<a class="my-button ui-state-default nav-link dropdown-toggle ui-corner-all" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Appointments
+					</a>
+					<div class="ui-widget-content dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="./makeAppointment.html">Make an appointment</a>
+						<a class="dropdown-item" href="#">Check your appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<!-- Main content starts here -->
+	<div id="mainContent" class="row ui-widget-content">
+		<div class="col-md-2 col-lg-2 col-xl-2 full-width">
+			<ul id="menu" class="sticky-menu ui-corner-all">
+				<a href="#"><li><div>Health funds</div></li></a>
+				<li><div>Dental treatment</div>
+					<ul class="ui-corner-all">
+						<a href="#"><li><div>Orthodontics</div></li></a>
+						<a href="#"><li><div>Aesthetic dentistry</div></li></a>
+						<a href="#"><li><div>Implantology</div></li></a>
+						<a href="#"><li><div>Parodontology</div></li></a>
+						<a href="#"><li><div>Endodontology</div></li></a>
+						<a href="#"><li><div>Oral prophylaxis</div></li></a>
+						<a href="#"><li><div>Dental surgery</div></li></a>
+						<a href="#"><li><div>Pediatric dentistry</div></li></a>
+					</ul>
+				</li>
+				<a href="#"><li><div>Contacts</div></li></a>
+			</ul>
+		</div>
+		<div class="col-md-8">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="./project-images/registration_room.jpg" class="d-block w-100" alt="registration_room_img">
+					</div>
+					<div class="carousel-item">
+						<img src="./project-images/dental_chair.jpg" class="d-block w-100" alt="dental_chair_img">
+					</div>
+					<div class="carousel-item">
+						<img src="./project-images/dentist_scary.jpg" class="d-block w-100" alt="scary_dentist_img">
+					</div>
+					<div class="carousel-item">
+						<img src="./project-images/dentist_in_action.jpg" class="d-block w-100" alt="dentist_in_action_img">
+					</div>
+					<div class="carousel-item">
+						<img src="./project-images/good_dentist.jpg" class="d-block w-100" alt="good_dentist_img">
+					</div>
+				</div>
+			</div>
+
+			<div id="newsText">
+				News
+			</div>
+			<div class="card-deck">
+				<div class="card">
+					<a href="#" target="blank">
+						<img src="./project-images/news_image_1.jpg" class="card-img" class="card-img-top" alt="news_image">
+						<div class="card-body">
+							<h5 class="card-title">Some news here with a very long heading</h5>
+							<p class="card-text card-main-text">Donec tincidunt mi vel lacus accumsan lacinia. Fusce vitae libero purus. Duis non pulvinar ante. Mauris quis congue ipsum. Pellentesque semper nibh nec aliquet semper. Nulla elementum nibh porttitor justo volutpat suscipit. Vivamus tincidunt elementum felis in suscipit. Fusce et quam fringilla, pulvinar magna malesuada, tristique ante. Quisque in augue lectus. Aliquam tristique congue varius.</p>
+							<div class="blurred"></div>
+						</div>
+					</a>
+					<div class="card-footer">
+						<small class="text-muted" name="card-footer">Date and time of publishing</small>
+					</div>
+				</div>
+				<div class="card">
+					<a href="#" target="blank">
+						<img src="./project-images/news_image_2.jpg" class="card-img-top" alt="news_image">
+						<div class="card-body">
+							<h5 class="card-title">Another news</h5>
+							<p class="card-text">Nam vitae lectus rutrum, elementum sem tincidunt, pharetra lacus. Duis laoreet, enim eget auctor semper, nunc justo semper sem, ut maximus est ipsum ac nunc. Fusce dictum leo ut urna tempus faucibus. Suspendisse sed metus sed quam sagittis lobortis ac ac massa. Aliquam id convallis urna, mattis lobortis dolor. Praesent faucibus massa at ante sollicitudin rutrum. Vivamus magna turpis, vestibulum at sodales non, facilisis eu lacus.</p>
+							<div class="blurred"></div>
+						</div>
+					</a>
+					<div class="card-footer">
+						<small class="text-muted">Date and time of publishing</small>
+					</div>
+				</div>
+				<div class="card">
+					<a href="#" target="blank">
+						<img src="./project-images/news_image_3.jpg" class="card-img-top" alt="news_image">
+						<div class="card-body">
+							<h5 class="card-title">Third news there</h5>
+							<p class="card-text">Cras semper libero vitae scelerisque ullamcorper. Nam ac ex nec ex pharetra vulputate. Praesent nec tortor dapibus, finibus nibh ac, sollicitudin augue. Donec vel orci at tortor molestie semper. Donec facilisis odio libero. In hac habitasse platea dictumst. Sed at sagittis mi, vulputate ornare lectus. Cras tempus viverra augue consequat tristique. Pellentesque sed orci condimentum, aliquet elit quis, elementum velit.</p>
+							<div class="blurred"></div>
+						</div>
+					</a>
+					<div class="card-footer">
+						<small class="text-muted">Date and time of publishing</small>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-2" id="doctors">
+			<div id="ourTeamBackground" class="ui-corner-all"></div>
+			<div id="ourTeam">
+				Our team
+			</div>
+			<div id="doc1" class="personnel">
+				<img class="img-thumbnail" src="./project-images/49_Female_Dentist-512.png" alt="d-r Jane Doe picture">
+				<p class="doc-name">D-r Jane Doe № 1</p>
+				<p class="doc-description"><i>(main associate / dental surgent)</i></p>
+			</div>
+			<div id="doc2" class="personnel">
+				<img class="img-thumbnail" src="./project-images/50_Male_Dentist-512.png" alt="d-r John Doe picture">
+				<p class="doc-name">D-r John Doe № 2</p>
+				<p class="doc-description"><i>(main associate / dental surgent)</i></p>
+			</div>
+			<div id="doc3" class="personnel">
+				<img class="img-thumbnail" src="./project-images/49_Female_Dentist-512.png" alt="d-r Jane Doe picture">
+				<p class="doc-name">D-r Jane Doe № 3</p>
+				<p class="doc-description"><i>(dentist)</i></p>
+			</div>
+			<div id="doc4" class="personnel">
+				<img class="img-thumbnail" src="./project-images/50_Male_Dentist-512.png" alt="d-r John Doe picture">
+				<p class="doc-name">D-r John Doe № 4</p>
+				<p class="doc-description"><i>(dentist)</i></p>
+			</div>
+			<div id="doc5" class="personnel">
+				<img class="img-thumbnail" src="./project-images/49_Female_Dentist-512.png" alt="d-r Jane Doe picture">
+				<p class="doc-name">D-r Jane Doe № 5</p>
+				<p class="doc-description"><i>(dentist)</i></p>
+			</div>
+		</div>
+		<ul id="subscribtionList">
+			<li class="emial-list-caption"><u>Subscribed e-mails:</u></li>
+			<li id="loadedEmails"></li>
+		</ul>
+	</div>
+
+	<!-- Footer starts here -->
+	<footer id="footer">
+		<div class="row">
+			<form id="formSubscribe" class="needs-validation col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+				<div class="form-group">
+					<label for="subscribe">Subscribe for our booklet</label>
+					<div class="form-group form-inline">
+						<input type="text" class="form-control" id="inputSubscribe" placeholder="e-mail">
+						<div class="error-message">Please enter a valid e-mail</div>
+						<input id="btnSubscribe" type="submit" value="Subscribe" class="ui-button"/>
+					</div>
+				</div>
+			</form>
+			<div id="footerMenu" class="col-12 col-sm-6 col-md-8 col-lg-8 col-xl-8"">
+				<div class="row">
+					<a class="col-2.5" href="#">About coockies</a>
+					<a class="col-2.5" href="#">Privacy policy</a>
+					<a class="col-2.5" href="#">Terms of use</a>
+					<a class="col-2.5" href="#">Advertising</a>
+					<a class="col-2.5" href="#">Certificates</a>
+				</div>
+			</div>
+		</div>
+		<a id="adminMenu" class="ui-corner-all" href="../php_homeworks_exercises/adminLogin.html">admin login</a>
+		<div><i>Powered by Keti Project Homework</i></div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="./script/scriptHome.js"></script>
+</body>
+</html>

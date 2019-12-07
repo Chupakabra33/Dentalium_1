@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0, minimum-scale=0.86">
+	<title>Dentalium - project</title>
+
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="./css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="./css/jquery-ui.theme.css">
+	<link rel="stylesheet" type="text/css" href="./css/stylesRegister.css">
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous">
+	</script>
+	<script
+		src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+		integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+		crossorigin="anonymous">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.min.js"></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous">
+	</script>
+</head>
+
+<body>
+<div id="theWholePage" class="ui-widget">
+
+	<!-- Header -->
+	<nav class="ui-widget-header navbar navbar-expand-lg navbar-light bg-light">
+		<img class="navbar-brand" src="./project-images/tooth-brand.jpg" class="d-inline-block" alt="logo"><h1 id="logoText">Dentalium</h1>
+		<button class="ui-button navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="my-button ui-state-default nav-item nav-link active ui-corner-all" href="./home.html">Home<span class="sr-only">(current)</span></a>
+				<a class="my-button ui-state-active nav-item nav-link ui-corner-all" href="./register.html">Register</a>
+				<a class="my-button ui-state-default nav-item nav-link ui-corner-all" href="./search.html">Search</a>
+				<div class="nav-item dropdown">
+					<a class="my-button ui-state-default nav-link dropdown-toggle ui-corner-all" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Appointments
+					</a>
+					<div class="ui-widget-content dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="./makeAppointment.html">Make an appointment</a>
+						<a class="dropdown-item" href="#">Check your appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<!-- Main content starts here -->
+	<div id="mainContent">
+
+		<form id="form">
+			<div class="form-group">
+				<input id="email" class="form-control" type="email" name="email" placeholder="e-mail" required="true" autofocus="on"/>
+			</div>
+
+			<div class="form-group">
+				<input id="username" class="form-control" type="text" name="username" placeholder="username" minlength="2" required="true"/>
+			</div>
+
+			<div class="form-group">
+				<input id="fullName" class="form-control" type="text" name="fullname" placeholder="full name (e.g. John Doe)" required="true"/>
+			</div>
+
+			<div class="form-group">
+				<input id="password" class="form-control" type="password" name="password" placeholder="password (at least 6 symbols)" minlength="6" required="true" autocomplete="off"/>
+			</div>
+
+			<div class="form-group">
+				<input id="confirmPass" class="form-control" type="password" name="confirmPass" placeholder="confirm password" required="true" autocomplete="off"/>
+				<p>Note: All fields should be filled</p>
+			</div>
+
+			<div class="form-group">
+				<input id="register" class="ui-button ui-corner-all" type="submit" name="submit" value="Register"/>
+			</div>
+			
+		</form>
+		<div id="formBackground" class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
+		</div>
+		<h2>You have registered successfully.</h2>
+	</div>
+
+	<!-- Footer starts here -->
+	<footer class="ui-widget-content">
+		<div id="footerMenu">
+			<a href="#">About coockies</a>
+			<a href="#">Privacy policy</a>
+			<a href="#">Terms of use</a>
+			<a href="#">Advertising</a>
+			<a href="#">Certificates</a>
+		</div>
+		<div>Powered by Keti Project Homework</div>
+	</footer>
+</div>
+
+	<script type="text/javascript" src="./script/scriptRegister.js?ver=1.0"></script>
+</body>
+</html>

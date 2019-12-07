@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0, minimum-scale=0.86">
+	<title>Dentalium - project</title>
+
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap-grid.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/jquery-ui.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/jquery-ui.theme.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/stylesMakeAppointment.css"/>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+		crossorigin="anonymous">
+	</script>
+	<script
+		src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+		integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+		crossorigin="anonymous">
+	</script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous">
+	</script>
+</head>
+
+<body>
+<div id="theWholePage" class="ui-widget ui-widget-content">
+	
+	<!-- Header -->
+	<nav class="ui-widget-header navbar navbar-expand-lg navbar-light bg-light">
+		<img class="navbar-brand" src="./project-images/tooth-brand.jpg" class="d-inline-block" alt="logo"><h1 id="logoText">Dentalium</h1>
+		<button class="ui-button navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="my-button ui-state-default nav-item nav-link active ui-corner-all" href="./home.html"">Home<span class="sr-only">(current)</span></a>
+				<a class="my-button ui-state-default nav-item nav-link ui-corner-all" href="./register.html">Register</a>
+				<a class="my-button ui-state-default nav-item nav-link ui-corner-all" href="./search.html">Search</a>
+				<div class="nav-item dropdown">
+					<a class="my-button ui-state-active nav-link dropdown-toggle ui-corner-all" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Appointments
+					</a>
+					<div class="ui-widget-content dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item ui-state-active" href="#">Make an appointment</a>
+						<a class="dropdown-item" href="#">Check your appointment</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	
+	<!-- Main content starts here -->
+	<div id="mainContent" class="row ui-widget-content">
+		<div class="col-md-2 full-width">
+			<ul id="menu" class="sticky-menu ui-corner-all">
+				<a href="#"><li><div>Health funds</div></li></a>
+				<li><div>Dental treatment</div>
+					<ul class="ui-corner-all">
+						<a href="#"><li><div>Orthodontics</div></li></a>
+						<a href="#"><li><div>Aesthetic dentistry</div></li></a>
+						<a href="#"><li><div>Implantology</div></li></a>
+						<a href="#"><li><div>Parodontology</div></li></a>
+						<a href="#"><li><div>Endodontology</div></li></a>
+						<a href="#"><li><div>Oral prophylaxis</div></li></a>
+						<a href="#"><li><div>Dental surgery</div></li></a>
+						<a href="#"><li><div>Pediatric dentistry</div></li></a>
+					</ul>
+				</li>
+				<a href="#"><li><div>Contacts</div></li></a>
+			</ul>
+		</div>
+
+		<div class="col-md-8" id="calendar-col">
+			<p class="instructions">Pick a date to make an appointment</p>
+			<div id="calendar"></div>
+		</div>
+
+		<div class="col-md-2" id="doctors">
+			<div id="ourTeamBackground" class="ui-corner-all"></div>
+			<div id="ourTeam">
+				Our team
+			</div>
+			<div id="doc1" class="personnel">
+				<img class="img-thumbnail" src="./project-images/49_Female_Dentist-512.png" alt="d-r Jane Doe picture">
+				<p class="doc-name">D-r Jane Doe № 1</p>
+				<p class="doc-description"><i>(main associate / dental surgent)</i></p>
+			</div>
+			<div id="doc2" class="personnel">
+				<img class="img-thumbnail" src="./project-images/50_Male_Dentist-512.png" alt="d-r John Doe picture">
+				<p class="doc-name">D-r John Doe № 2</p>
+				<p class="doc-description"><i>(main associate / dental surgent)</i></p>
+			</div>
+			<div id="doc3" class="personnel">
+				<img class="img-thumbnail" src="./project-images/49_Female_Dentist-512.png" alt="d-r Jane Doe picture">
+				<p class="doc-name">D-r Jane Doe № 3</p>
+				<p class="doc-description"><i>(dentist)</i></p>
+			</div>
+			<div id="doc4" class="personnel">
+				<img class="img-thumbnail" src="./project-images/50_Male_Dentist-512.png" alt="d-r John Doe picture">
+				<p class="doc-name">D-r John Doe № 4</p>
+				<p class="doc-description"><i>(dentist)</i></p>
+			</div>
+			<div id="doc5" class="personnel">
+				<img class="img-thumbnail" src="./project-images/49_Female_Dentist-512.png" alt="d-r Jane Doe picture">
+				<p class="doc-name">D-r Jane Doe № 5</p>
+				<p class="doc-description"><i>(dentist)</i></p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer starts here -->
+	<footer id="footer" class="ui-widget-content"">
+		<div id="footerMenu" class="row">
+			<a class="col-2.5" href="#">About coockies</a>
+			<a class="col-2.5" href="#">Privacy policy</a>
+			<a class="col-2.5" href="#">Terms of use</a>
+			<a class="col-2.5" href="#">Advertising</a>
+			<a class="col-2.5" href="#">Certificates</a>
+		</div>
+		<div><i>Powered by Keti Project Homework</i></div>
+	</footer>
+</div>
+
+<script type="text/javascript" src="./script/scriptMakeAppointment.js?ver=1.0"></script>
+</body>
+</html>
